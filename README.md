@@ -33,7 +33,7 @@ Loading the profile with `Set-Profile.ps1`
 
 ```PS
 # $profilePath contains URL to profile.ps1 
-$profilePath = 'https://raw.githubusercontent.com/mjisaak/azure/master/profile.ps1'
+$profilePath = 'https://raw.githubusercontent.com/joll3/azure/master/profile.ps1'
 # New random GUID to prevent web client from caching file 
 $downloadString = '{0}?{1}' -f $profilePath, (New-Guid)
 # Download profile.ps1 as string and execute to load into runspace
@@ -43,7 +43,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString($profilePath
 Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 ```PS
-(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/mjisaak/azure/master/Set-Profile.ps1') | Set-Content $profile -Force
+(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/joll3/azure/Set-Profile.ps1') | Set-Content $profile -Force
 ```
 
 ```PS
