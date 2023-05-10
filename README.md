@@ -59,8 +59,10 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 ## [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) - #Github secrets leak
 
-1. copy bfg-x.yy.z.jar to working directory
+1. copy/download bfg-x.yy.z.jar to working directory
+
 2. Create `passwd.txt` which lists sensitive strings
+
 3. ```bash
     java -jar ./bfg-1.14.0.jar --replace-text passwd.txt
     ```
