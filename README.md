@@ -51,3 +51,16 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 ```
 
 [1]: https://github.com/mjisaak "mjisaak"
+
+## [DuckDuckGo email protection](https://bitwarden.com/help/generator/#username-types)
+
+- **Generate Private Duck Address** > browser dev tools *Network* > authorization: Bearer {API token value}
+- <https://www.icloud.com/shortcuts/febbc87b90a24921a2399764fcafae46>
+
+## [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) - #Github secrets leak
+
+1. copy bfg-x.yy.z.jar to working directory
+2. Create `passwd.txt` which lists sensitive strings
+3. ```bash
+    java -jar ./bfg-1.14.0.jar --replace-text passwd.txt
+    ```
