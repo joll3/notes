@@ -66,3 +66,17 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 3. ```bash
     java -jar ./bfg-1.14.0.jar --replace-text passwd.txt
     ```
+
+## SVG Scalable Vector Graphics
+
+- <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute>
+
+### [Raivo](https://github.com/raivo-otp/issuer-icons) icons SVG
+
+- use online tool Convertio to [convert image file (.png .jpg etc.) to .svg](https://convertio.co/png-svg/)
+- <https://developers.convertio.co/cli/> - cli version looks really good also
+- <https://jsfiddle.net/u9x423ph/2/> javascript sandbox - the best one I have ever used < 2023-05-11
+
+to see and edit .svg XML source in browser `view-source:file:///{path}sf_mark_primary.svg`
+
+## [AdoptOpenJDK](https://adoptopenjdk.net/releases.html) - opensource JDK
