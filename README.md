@@ -1,5 +1,14 @@
 # Handcrafted guides for doing cloudstuff
 
+## Windows Terminal
+
+- `|clip` #copy output `from` Windows Terminal `to` clipboard
+- [installing chocolatey](https://chocolatey.org/install#individual) #!done
+    Run `Get-ExecutionPolicy`,
+    If it returns Restricted, then run,
+    `Set-ExecutionPolicy AllSigned` OR
+    `Set-ExecutionPolicy Bypass -Scope Process`
+
 ## Cloudshell setup
 
 - recommended: Windows terminal, with Powershell cloudshell
@@ -11,7 +20,7 @@ PS /home/contoso> Connect-AzureAD
 PS /home/contoso> Get-AzureADUser -ObjectId 'first.last@domain.com'
 ```
 
-## [Cloudshell profile](https://about-azure.com/configure-azure-cloud-shell-to-use-a-profile-hosted-on-github/)
+### [Cloudshell profile](https://about-azure.com/configure-azure-cloud-shell-to-use-a-profile-hosted-on-github/)
 
 - [followed a reputable guide from][1]
 
@@ -75,8 +84,49 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 - use online tool Convertio to [convert image file (.png .jpg etc.) to .svg](https://convertio.co/png-svg/)
 - <https://developers.convertio.co/cli/> - cli version looks really good also
-- <https://jsfiddle.net/u9x423ph/2/> javascript sandbox - the best one I have ever used < 2023-05-11
+- <https://jsfiddle.net/u9x423ph/2/> - javascript sandbox - the best one I have ever used < 2023-05-11
 
 to see and edit .svg XML source in browser `view-source:file:///{path}sf_mark_primary.svg`
 
+- [scalefusion-branding-guidelines.pdf](https://scalefusion.com/mediakit/scalefusion-branding-guidelines.pdf)
+
+### [favicon](https://en.wikipedia.org/wiki/Favicon)
+
 ## [AdoptOpenJDK](https://adoptopenjdk.net/releases.html) - opensource JDK
+
+## Link collection
+
+- <https://testconnectivity.microsoft.com/tests/EwsTask/input> - Microsoft Remote Connectivity Analyzer
+
+- <https://github.com/MISP/MISP-Taxii-Server>
+
+## Pandoc markdown > pdf
+
+```bash
+pandoc Työnantajan_todistus.md -o tyonantajantodistus.pdf
+```
+
+## WSL Ubuntu Docker
+
+```bash
+sudo dockerd # start docker daemon with sudo priviledges
+```
+
+## certificates
+
+```openssl x509 -in /path/to/certificate.crt -text -noout``` - check certificate details
+
+### certificates for ZScaler
+
+- <https://github.com/microsoft/WSL/issues/5134#issuecomment-1043406222>
+
+### mkcert - locally trusted developer certificates
+
+- <https://github.com/FiloSottile/mkcert> - have not tried this yet
+
+## regex
+
+- [regex101.com](www.regex101.com)  
+- `^\W*LOG\s(\d*)-(\d*)-(\d*)` >replace> `LOG $3-$2-$1`
+  - <https://regex101.com/r/Mm2ctB/1>
+  
