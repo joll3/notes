@@ -2,7 +2,12 @@
 
 ## Windows Terminal
 
-- `|clip #copy` output from Windows Terminal to clipboard
+- `|clip` # copy output from Windows Terminal to clipboard
+
+```terminal
+| clip # copy output from Windows Terminal to clipboard
+```
+
 - [installing chocolatey](https://chocolatey.org/install#individual) #!done
     Run `Get-ExecutionPolicy`,
     If it returns Restricted, then run,
