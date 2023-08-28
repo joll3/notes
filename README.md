@@ -2,19 +2,11 @@
 
 ## Windows Terminal
 
-- `|clip` # copy output from Windows Terminal to clipboard
-
 ```terminal
-| clip # copy output from Windows Terminal to clipboard
+|clip #copy to clipboard
 ```
 
-- [installing chocolatey](https://chocolatey.org/install#individual) #!done
-    Run `Get-ExecutionPolicy`,
-    If it returns Restricted, then run,
-    `Set-ExecutionPolicy AllSigned` OR
-    `Set-ExecutionPolicy Bypass -Scope Process`
-
-## wsl
+## wsl2
 
 - `wsl --shutdown` - shuts down wsl instances if vmmem process consumes too much resources
 - `wsreset.exe` - resets windows store (might help for "PUR Authentication failure" in MS Store)
@@ -69,7 +61,9 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 . $profile
 ```
 
-[1]: https://github.com/mjisaak "mjisaak"
+## markdown
+- [reference-style-links](https://www.markdownguide.org/basic-syntax#reference-style-links) to make text more readable like this: first part is easy to read [inline][1] and second part can be anywhere, i.e. at the end of document 
+- the difference between i.e. "__id est__ (latin)" == "that is" and eg. "__exempli gratia__ (latin)" == "for example" is clear and both are **usually** followed by a comma. 
 
 ## [DuckDuckGo email protection](https://bitwarden.com/help/generator/#username-types)
 
@@ -139,3 +133,6 @@ sudo dockerd # start docker daemon with sudo priviledges
 - [regex101.com](www.regex101.com)  
 - `^\W*LOG\s(\d*)-(\d*)-(\d*)` >replace> `LOG $3-$2-$1`
   - <https://regex101.com/r/Mm2ctB/1>
+
+[1]: <https://www.markdownguide.org/basic-syntax#reference-style-links> "a title in double quotation marks" 
+[2]: <https://www.merriam-webster.com/grammar/ie-vs-eg-abbreviation-meaning-usage-difference>
