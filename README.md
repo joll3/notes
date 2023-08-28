@@ -1,8 +1,8 @@
-# Handcrafted guides for doing cloudstuff
+# Handcrafted guides for doing InfoSec
 
 ## Windows Terminal
 
-- `|clip` #copy output `from` Windows Terminal `to` clipboard
+- `|clip #copy` output from Windows Terminal to clipboard
 - [installing chocolatey](https://chocolatey.org/install#individual) #!done
     Run `Get-ExecutionPolicy`,
     If it returns Restricted, then run,
