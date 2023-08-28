@@ -9,6 +9,11 @@
     `Set-ExecutionPolicy AllSigned` OR
     `Set-ExecutionPolicy Bypass -Scope Process`
 
+## wsl
+
+- `wsl --shutdown` - shuts down wsl instances if vmmem process consumes too much resources
+- `wsreset.exe` - resets windows store (might help for "PUR Authentication failure" in MS Store)
+
 ## Cloudshell setup
 
 - recommended: Windows terminal, with Powershell cloudshell
@@ -129,4 +134,3 @@ sudo dockerd # start docker daemon with sudo priviledges
 - [regex101.com](www.regex101.com)  
 - `^\W*LOG\s(\d*)-(\d*)-(\d*)` >replace> `LOG $3-$2-$1`
   - <https://regex101.com/r/Mm2ctB/1>
-  
