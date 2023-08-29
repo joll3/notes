@@ -90,7 +90,7 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 - <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute>
 
-### [Raivo](https://github.com/raivo-otp/issuer-icons) icons SVG
+## [Raivo](https://github.com/raivo-otp/issuer-icons) icons SVG
 
 - use online tool Convertio to [convert image file (.png .jpg etc.) to .svg](https://convertio.co/png-svg/)
 - <https://developers.convertio.co/cli/> - cli version looks really good also
@@ -113,13 +113,13 @@ to see and edit .svg XML source in browser `view-source:file:///{path}sf_mark_pr
 ## Pandoc markdown > pdf
 
 ```bash
-pandoc Työnantajan_todistus.md -o tyonantajantodistus.pdf
+pandoc file1.md -o fil1.pdf
 ```
 
 ## WSL Ubuntu Docker
 
 ```bash
-sudo dockerd # start docker daemon with sudo priviledges
+sudo dockerd #start docker daemon with sudo priviledges
 ```
 
 ## certificates
@@ -129,10 +129,7 @@ sudo dockerd # start docker daemon with sudo priviledges
 ### certificates for ZScaler
 
 - <https://github.com/microsoft/WSL/issues/5134#issuecomment-1043406222>
-
-### mkcert - locally trusted developer certificates
-
-- <https://github.com/FiloSottile/mkcert> - have not tried this yet
+- <https://github.com/microsoft/WSL/issues/3161#issuecomment-898007915>
 
 ## regex
 
