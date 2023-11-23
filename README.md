@@ -1,4 +1,4 @@
-# Handcrafted guides for doing InfoSec
+# Handcrafted guides for doing infosec and things
 
 ## Windows Terminal
 
