@@ -2,7 +2,7 @@
 
 ## zsh < command line interpreter CLI
 
-- zsh = default __Z Shell__ for Unix-like operating systems (= macOS)
+- zsh = default __Z Shell__ for Unix-like operating systems (e.g. macOS)
   - extended Bourne shell with features __(scripting, customization, compatibility)__ from bash, ksh, tcsh
   - installs via package manager, if not pre-installed like on macOS
   - `chsh -s /bin/zsh` can be used to change shell
