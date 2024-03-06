@@ -1,4 +1,30 @@
 ---
 ---
 
-@import 'jekyll-theme-cayman';
+@import 'jekyll-theme-cayman'
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+      color: black;
+  }
+  .highlight {
+    …………
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #000;
+      color: white;
+  }
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+
+  }
+  img:hover {
+    opacity: 1;
+  }
+  .highlight {
+    …
+};
