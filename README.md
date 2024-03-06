@@ -105,13 +105,20 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager __Git__ as part of their offering.
 
+### Github guides
+
+- [Git Magic Guide](http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/pr01.html) - recommended reading to learn git
+- <https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github>
+`git reset --hard <hashofcommit>`
+`git push --force`
+
 ### macOS Git setup
 
 `git --version`
 > `git version 2.39.3 (Apple Git-145)`
 
 `which git`
-> `/usr/bin/git` < executable run from location
+> `/usr/bin/git` < executable run from this location
 
 - macOS built-in git version > lets not use that, install via brew
 
@@ -121,8 +128,6 @@ Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager __Git
 > `/opt/homebrew/bin/git`
 
 [Adding global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore) file with `git config --global core.excludesFile '~/.gitignore'` > create file and append `.DS_Store` as new line. This changes settings in user specific `~/.gitconfig` file.
-
-
 
 ### [Github guide for SSH authentication](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
