@@ -125,9 +125,11 @@ Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git
 
 - macOS built-in git version > lets not use that, install via brew
 
-`brew install git` and update symlinks/files with `brew link --overwrite git`
+`brew install git` and update symlinks/files with
 
-`which git`
+`brew link --overwrite git`
+
+`which git` to confirm executable
 
 > `/opt/homebrew/bin/git`
 
