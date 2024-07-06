@@ -2,8 +2,9 @@
 
 ## zsh < command line interpreter CLI
 
-- zsh = default __Z Shell__ for Unix-like operating systems (e.g. macOS)
-  - extended Bourne shell with features __(scripting, customization, compatibility)__ from bash, ksh, tcsh
+- zsh = default **Z Shell** for Unix-like operating systems (e.g. macOS)
+
+  - extended Bourne shell with features **(scripting, customization, compatibility)** from bash, ksh, tcsh
   - installs via package manager, if not pre-installed like on macOS
   - `chsh -s /bin/zsh` can be used to change shell
 
@@ -11,7 +12,7 @@
 
 - `alias dusage='du -sh * | sort -hr'` > create temporary (this shell session only) alias for given command
 
-- `source ~/.zshrc` > sources/updates shell "run commands __rc__" into current session from script `.zshrc` text file (script executed by shell interpreter when starting new shell session)
+- `source ~/.zshrc` > sources/updates shell "run commands **rc**" into current session from script `.zshrc` text file (script executed by shell interpreter when starting new shell session)
 
 ### Environment variables in Unix-like shell
 
@@ -30,7 +31,7 @@ echo $PATH
 /Users/username/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS:/Applications/Little Snitch.app/Contents/Components
 ```
 
-- only __trusted directories__ should be in $PATH
+- only **trusted directories** should be in $PATH
 
 ## Windows Terminal
 
@@ -75,9 +76,9 @@ function Show-HelloWorld {
 Loading the profile with `Set-Profile.ps1`
 
 ```PS
-# $profilePath contains URL to profile.ps1 
+# $profilePath contains URL to profile.ps1
 $profilePath = 'https://raw.githubusercontent.com/joll3/azure/master/profile.ps1'
-# New random GUID to prevent web client from caching file 
+# New random GUID to prevent web client from caching file
 $downloadString = '{0}?{1}' -f $profilePath, (New-Guid)
 # Download profile.ps1 as string and execute to load into runspace
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString($profilePath))
@@ -97,27 +98,29 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 - [reference-style-links](https://www.markdownguide.org/basic-syntax#reference-style-links) to make text more readable like this: first part is easy to read [inline][1] and second part can be anywhere, i.e. at the end of document
 
-- the difference between i.e. "__id est__ (latin)" == "that is" and eg. "__exempli gratia__ (latin)" == "for example" is clear and both are __usually__ followed by a comma.
+- the difference between i.e. "**id est** (latin)" == "that is" and eg. "**exempli gratia** (latin)" == "for example" is clear and both are **usually** followed by a comma.
 
   - [Merriam Webster][2]
 
 ## Git(hub)
 
-Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager __Git__ as part of their offering.
+Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git** as part of their offering.
 
 ### Github guides
 
 - [Git Magic Guide](http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/pr01.html) - recommended reading to learn git
 - <https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github>
-`git reset --hard <hashofcommit>`
-`git push --force`
+  `git reset --hard <hashofcommit>`
+  `git push --force`
 
 ### macOS Git setup
 
 `git --version`
+
 > `git version 2.39.3 (Apple Git-145)`
 
 `which git`
+
 > `/usr/bin/git` < executable run from this location
 
 - macOS built-in git version > lets not use that, install via brew
@@ -125,6 +128,7 @@ Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager __Git
 `brew install git` and update symlinks/files with `brew link --overwrite git`
 
 `which git`
+
 > `/opt/homebrew/bin/git`
 
 [Adding global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore) file with `git config --global core.excludesFile '~/.gitignore'` > create file and append `.DS_Store` as new line. This changes settings in user specific `~/.gitconfig` file.
@@ -158,8 +162,8 @@ New cryptographically secure passphrase generation straight to clipboard `env LC
 
 Verify connection with `ssh -T git@github.com`
 
-#### __Github CLI__ not useful or installed
-  
+#### **Github CLI** not useful or installed
+
 ```shell
 gh --version`  - outputs executable for `GitHub CLI`
 > `zsh: command not found: gh
@@ -169,7 +173,7 @@ gh --version`  - outputs executable for `GitHub CLI`
 
 Provides consistent and secure authentication experience, including multi-factor auth, to every source control hosting service. Not required, not used. Storing SSH keys locally for persistent connection.
 
->Secure Git credential helper built on .NET that runs on Windows, macOS, and Linux. It aims to provide a consistent and secure authentication experience, including multi-factor auth, to every major source control hosting service and platform.
+> Secure Git credential helper built on .NET that runs on Windows, macOS, and Linux. It aims to provide a consistent and secure authentication experience, including multi-factor auth, to every major source control hosting service and platform.
 
 ### [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) - #Github secrets leak
 
@@ -178,20 +182,20 @@ Provides consistent and secure authentication experience, including multi-factor
 2. Create `strings.txt` which lists sensitive strings
 
 3. ```bash
-    java -jar ./bfg-1.14.0.jar --replace-text strings.txt
-    ```
+   java -jar ./bfg-1.14.0.jar --replace-text strings.txt
+   ```
 
 ### Background
 
-[Git](https://git-scm.com) free open source __distributed__ version control, with a branching model. Other alternative source code manager (SCM) tools (version control systems (VCS)) exist but are not relevant. Git is inherently local and can be hosted by anyone, since its open source.
+[Git](https://git-scm.com) free open source **distributed** version control, with a branching model. Other alternative source code manager (SCM) tools (version control systems (VCS)) exist but are not relevant. Git is inherently local and can be hosted by anyone, since its open source.
 
-[Github](https://github.com) is a company [bought by Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/) for __$7.5 billion__ worth of Microsoft stock in 2018.
+[Github](https://github.com) is a company [bought by Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/) for **$7.5 billion** worth of Microsoft stock in 2018.
 
 [GitLab](https://en.wikipedia.org/wiki/GitLab) is a 1600 person software company, first partly Ukrainian unicorn. Featured in the Gartner® "DevOps Platforms report".
 
 ## [DuckDuckGo email protection](https://bitwarden.com/help/generator/#username-types)
 
-- __Generate Private Duck Address__ > browser > dev tools _Network_ > authorization: Bearer {API token value}
+- **Generate Private Duck Address** > browser > dev tools _Network_ > authorization: Bearer {API token value}
 - <https://www.icloud.com/shortcuts/febbc87b90a24921a2399764fcafae46>
 
 ## SVG Scalable Vector Graphics
@@ -232,9 +236,18 @@ pandoc file1.md -o fil1.pdf
 sudo dockerd #start docker daemon with sudo priviledges
 ```
 
+## [QUIC](https://datatracker.ietf.org/doc/rfc9000/)
+
+Created by Google in 2012. QUIC is a transport layer protocol, using HTTP/3 multiplexed connections over UDP. In contrast HTTP/2 is based on stateful TCP connections. Supports encrypted HTTP traffic in a similar role to TCP, with reduced latency and more efficient loss recovery.
+
+Blocking Google QUIC traffic with firewall e.g. Little Snitch is almost impossible. Created `blocklist.txt` which had no effect on QUIC connections to `youtube.com`.
+
+- <https://www.reddit.com/r/networking/comments/148qz1f/why_is_there_a_general_hostility_to_quic_by/>
+- [Cloudflare QUIC](https://cloudflare-quic.com)
+
 ## certificates
 
-```openssl x509 -in /path/to/certificate.crt -text -noout``` - check certificate details
+`openssl x509 -in /path/to/certificate.crt -text -noout` - check certificate details
 
 ### certificates for ZScaler
 
@@ -243,10 +256,9 @@ sudo dockerd #start docker daemon with sudo priviledges
 
 ## regex
 
-- [regex101.com](www.regex101.com)  
+- [regex101.com](www.regex101.com)
 - `^\W*LOG\s(\d*)-(\d*)-(\d*)` >replace> `LOG $3-$2-$1`
   - <https://regex101.com/r/Mm2ctB/1>
 
-[1]: <https://www.markdownguide.org/basic-syntax#reference-style-links> "a title in double quotation marks"
-
-[2]: <https://www.merriam-webster.com/grammar/ie-vs-eg-abbreviation-meaning-usage-difference>
+[1]: https://www.markdownguide.org/basic-syntax#reference-style-links "a title in double quotation marks"
+[2]: https://www.merriam-webster.com/grammar/ie-vs-eg-abbreviation-meaning-usage-difference
