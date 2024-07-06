@@ -236,6 +236,13 @@ pandoc file1.md -o fil1.pdf
 sudo dockerd #start docker daemon with sudo priviledges
 ```
 
+## [Chromium](https://www.chromium.org/getting-involved/download-chromium/)
+
+[`chrome://net-internals`](chrome://net-internals/#events) - tools for network
+
+- [`chrome://net-export`](chrome://net-export/) - capture  logs
+- [`https://netlog-viewer.appspot.com/#import`](https://netlog-viewer.appspot.com/#import) - view logs
+
 ## [QUIC](https://datatracker.ietf.org/doc/rfc9000/)
 
 Created by Google in 2012. QUIC is a transport layer protocol, using HTTP/3 multiplexed connections over UDP. In contrast HTTP/2 is based on stateful TCP connections. Supports encrypted HTTP traffic in a similar role to TCP, with reduced latency and more efficient loss recovery.
