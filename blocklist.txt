@@ -1,1 +1,6 @@
+! Title: Personal Adblock List
+! Description: Productivity FTW
+! Expires: 14 days
+! Last modified: %timestamp%
+
 youtube.com
