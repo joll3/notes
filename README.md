@@ -238,10 +238,13 @@ sudo dockerd #start docker daemon with sudo priviledges
 
 ## [Chromium](https://www.chromium.org/getting-involved/download-chromium/)
 
+[`chrome://flags`](chrome://flags)
+
 [`chrome://net-internals`](chrome://net-internals/#events) - tools for network
 
 - [`chrome://net-export`](chrome://net-export/) - capture  logs
 - [`https://netlog-viewer.appspot.com/#import`](https://netlog-viewer.appspot.com/#import) - view logs
+
 
 ## [QUIC](https://datatracker.ietf.org/doc/rfc9000/)
 
