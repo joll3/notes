@@ -133,6 +133,13 @@ Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git
 
 [Adding global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore) file with `git config --global core.excludesFile '~/.gitignore'` > create file and append `.DS_Store` as new line. This changes settings in user specific `~/.gitconfig` file.
 
+[`git config --global user.email "5497641+joll3@users.noreply.github.com"`](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github)
+
+- **noreply** email address, to keep personal email addresses private
+- **Block command line pushes that expose my email**
+
+[`git config --global user.name "joll3"`](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
+
 ### [Github guide for SSH authentication](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 1. generate keypair
