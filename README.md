@@ -25,13 +25,14 @@ export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/system/Library/
 - `export` sets and makes environment variables available in child processes
 - colon-separated list of directories where [shell] looks for executable commands in order
 - `export PATH=$PATH:/some/other/directory` appends $PATH
+- only **trusted directories** should be in $PATH
 
 ```shell
 echo $PATH
-/Users/username/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS:/Applications/Little Snitch.app/Contents/Components
+/Users/username/.nvm/versions/node/v16.13.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/...
 ```
 
-- only **trusted directories** should be in $PATH
+### [`~/.ssh/config`](https://linuxize.com/post/using-the-ssh-config-file/)
 
 ## Windows Terminal
 
