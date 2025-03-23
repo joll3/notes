@@ -1,5 +1,21 @@
 # Handcrafted guides for doing infosec and things
 
+## #usecase rclone backup to Hetzner storagebox
+
+REQUIREMENTS: MacOS > Terminal > [zsh](#zsh--command-line-interpreter-cli) > ssh + r
+
+## rclone vs rsync
+
+| rsync                                         | rclone                                                     |
+| --------------------------------------------- | ---------------------------------------------------------- |
+| built-in MacOS Terminal                       | `brew install rclone`                                      |
+| written in C with GPL-3.0-or-later license    | inspired by rsync written in Go                            |
+| source OR destination must be local           | supports 70+ cloud providers (Google Drive, Dropbox, etc.) |
+| does delta encoding to minimize network usage | does not change files                                      |
+| single threaded application                   | supports multiple threads                                  |
+| sync local folders                            | can mount local, virtual or cloud filesystems              |
+| SSH                                           | serves mounts through SFTP, HTTP, WebDAV, FTP and DLNA     |
+
 ## zsh < command line interpreter CLI
 
 - zsh = default **Z Shell** for Unix-like operating systems (e.g. macOS)
@@ -12,7 +28,7 @@
 
 - `alias dusage='du -sh * | sort -hr'` > create temporary (this shell session only) alias for given command
 
-- `source ~/.zshrc` > sources/updates shell "run commands **rc**" into current session from script `.zshrc` text file (script executed by shell interpreter when starting new shell session)
+- `source ~/.zshrc` > sources/updates shell "run commands `rc`" into current session from script `.zshrc` text file (script executed by shell interpreter when starting new shell session)
 
 ### Environment variables in Unix-like shell
 
@@ -42,12 +58,12 @@ echo $PATH
 
 ## wsl2
 
-- `wsl --shutdown` - shuts down wsl instances if vmmem process consumes too much resources
+- `wsl --shutdown` - shuts down wsl instances if `vmmem` process consumes too much resources
 - `wsreset.exe` - resets windows store (might help for "PUR Authentication failure" in MS Store)
 
 ## Azure Cloudshell setup
 
-- recommended: Windows terminal, with Powershell cloudshell
+- recommended: Windows terminal with Powershell cloudshell
 
 ### Goal
 
@@ -58,7 +74,7 @@ PS /home/contoso> Get-AzureADUser -ObjectId 'first.last@domain.com'
 
 ### [Cloudshell profile](https://about-azure.com/configure-azure-cloud-shell-to-use-a-profile-hosted-on-github/)
 
-- [followed a reputable guide][1]
+[followed a reputable guide][1]
 
 ```PS
 #returns False because no profile exists
@@ -99,9 +115,7 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 - [reference-style-links](https://www.markdownguide.org/basic-syntax#reference-style-links) to make text more readable like this: first part is easy to read [inline][1] and second part can be anywhere, i.e. at the end of document
 
-- the difference between i.e. "**id est** (latin)" == "that is" and eg. "**exempli gratia** (latin)" == "for example" is clear and both are **usually** followed by a comma.
-
-  - [Merriam Webster][2]
+- the difference between i.e. "**id est** (latin)" == "that is" and eg. "**exempli gratia** (latin)" == "for example" is clear and both are **[usually][2]** followed by a comma.
 
 ## Git(hub)
 
@@ -109,10 +123,7 @@ Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git
 
 ### Github guides
 
-- [Git Magic Guide](http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/pr01.html) - recommended reading to learn git
-- <https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github>
-  `git reset --hard <hashofcommit>`
-  `git push --force`
+[Git Magic Guide](http://www-cs-students.stanford.edu/%7Eblynn/gitmagic/pr01.html) - recommended reading to learn git
 
 ### macOS Git setup
 
@@ -124,17 +135,15 @@ Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git
 
 > `/usr/bin/git` < executable run from this location
 
-- macOS built-in git version > lets not use that, install via brew
+- macOS built-in git version > lets not use that, install via `brew`
 
-`brew install git` and update symlinks/files with
-
-`brew link --overwrite git`
-
+`brew install git` and update symlinks/files with `brew link --overwrite git`  
 `which git` to confirm executable
 
 > `/opt/homebrew/bin/git`
 
-[Adding global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore) file with `git config --global core.excludesFile '~/.gitignore'` > create file and append `.DS_Store` as new line. This changes settings in user specific `~/.gitconfig` file.
+[Adding global .gitignore](https://stackoverflow.com/questions/7335420/global-git-ignore) file with
+`git config --global core.excludesFile '~/.gitignore'` > create file and append `.DS_Store` as new line. This changes settings in user specific `~/.gitconfig` file.
 
 [`git config --global user.email "5497641+joll3@users.noreply.github.com"`](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#setting-your-commit-email-address-on-github)
 
@@ -201,20 +210,18 @@ Provides consistent and secure authentication experience, including multi-factor
 
 [Github](https://github.com) is a company [bought by Microsoft](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/) for **$7.5 billion** worth of Microsoft stock in 2018.
 
-[GitLab](https://en.wikipedia.org/wiki/GitLab) is a 1600 person software company, first partly Ukrainian unicorn. Featured in the Gartner® "DevOps Platforms report".
+[GitLab](https://en.wikipedia.org/wiki/GitLab) is a 1600 person software company, first unicorn company from Ukraine 🇺🇦. Featured in the Gartner® "DevOps Platforms report". Offerings include [www.gitlab.com](https://about.gitlab.com) SaaS and Self-Managed subscription
 
 ## [DuckDuckGo email protection](https://bitwarden.com/help/generator/#username-types)
 
 - **Generate Private Duck Address** > browser > dev tools _Network_ > authorization: Bearer {API token value}
-- <https://www.icloud.com/shortcuts/febbc87b90a24921a2399764fcafae46>
+- create [Apple Shortcuts](https://www.icloud.com/shortcuts/febbc87b90a24921a2399764fcafae46) for easy access to `*@duck.com` email addresses on iOS device
 
-## SVG Scalable Vector Graphics
+## Favicon `.svg` icons
 
-- <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute>
+Workflow for importing proper custom favicons to RaivoOTP (**deprecated**) application.
 
-## [Raivo](https://github.com/raivo-otp/issuer-icons) icons SVG
-
-- use online tool Convertio to [convert image file (.png .jpg etc.) to .svg](https://convertio.co/png-svg/)
+- use online tool to [convert image file (.png .jpg etc.) to .svg](https://convertio.co/png-svg/)
 - <https://developers.convertio.co/cli/> - cli version looks really good also
 - <https://jsfiddle.net/u9x423ph/2/> - javascript sandbox - the best one I have ever used < 2023-05-11
 
@@ -222,17 +229,15 @@ to see and edit .svg XML source in browser `view-source:file:///{path}sf_mark_pr
 
 - [scalefusion-branding-guidelines.pdf](https://scalefusion.com/mediakit/scalefusion-branding-guidelines.pdf)
 
-### [favicon](https://en.wikipedia.org/wiki/Favicon)
+[Favicon](https://en.wikipedia.org/wiki/Favicon)
 
 ## [AdoptOpenJDK](https://adoptopenjdk.net/releases.html) - opensource JDK
 
 ## Microsoft / Azure administrator
 
-- <https://testconnectivity.microsoft.com/tests/EwsTask/input> - Microsoft Remote Connectivity Analyzer
+[Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/EwsTask/input)
 
-## SIEM homelab
-
-- <https://github.com/MISP/MISP-Taxii-Server>
+## [SIEM](https://github.com/MISP/MISP-Taxii-Server) for homelab
 
 ## Pandoc markdown > pdf
 
@@ -250,10 +255,8 @@ sudo dockerd #start docker daemon with sudo priviledges
 
 [`chrome://flags`](chrome://flags)
 
-[`chrome://net-internals`](chrome://net-internals/#events) - tools for network
-
-- [`chrome://net-export`](chrome://net-export/) - capture logs
-- [`https://netlog-viewer.appspot.com/#import`](https://netlog-viewer.appspot.com/#import) - view logs
+- [`chrome://net-export`](chrome://net-export/) - capture network logs
+- [`https://netlog-viewer.appspot.com/#import`](https://netlog-viewer.appspot.com/#import) - view captured networkd logs
 
 ## [QUIC](https://datatracker.ietf.org/doc/rfc9000/)
 
@@ -276,8 +279,6 @@ Blocking Google QUIC traffic with firewall e.g. Little Snitch is almost impossib
 ## regex
 
 - [regex101.com](www.regex101.com)
-- `^\W*LOG\s(\d*)-(\d*)-(\d*)` >replace> `LOG $3-$2-$1`
-  - <https://regex101.com/r/Mm2ctB/1>
 
 [1]: https://www.markdownguide.org/basic-syntax#reference-style-links "a title in double quotation marks"
 [2]: https://www.merriam-webster.com/grammar/ie-vs-eg-abbreviation-meaning-usage-difference
