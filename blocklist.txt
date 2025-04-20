@@ -3,4 +3,20 @@
 ! Expires: 14 days
 ! Last modified: %timestamp%
 
-youtube.com
+! 🟥 Reddit
+||reddit.com^
+||*.reddit.com^
+||redditmedia.com^
+||*.redditmedia.com^
+
+! 🟦 Helsingin Sanomat (hs.fi)
+||hs.fi^
+||*.hs.fi^
+||sanoma.fi^
+||*.sanoma.fi^
+
+! 🟨 Ilta-Sanomat (is.fi)
+||is.fi^
+||*.is.fi^
+||iltasanomat.fi^
+||*.iltasanomat.fi^
