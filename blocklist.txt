@@ -1,4 +1,4 @@
-! Title: Personal Adblock List
+! Title: jjs productivity
 ! Description: Productivity FTW
 ! Expires: 14 days
 ! Last modified: %timestamp%
