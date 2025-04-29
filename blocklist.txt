@@ -20,3 +20,6 @@
 ||*.is.fi^
 ||iltasanomat.fi^
 ||*.iltasanomat.fi^
+
+! Netflix
+||netflix.com^
