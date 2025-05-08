@@ -26,3 +26,21 @@
 
 ! Piratebay
 || *thepiratebay.org^
+
+! Iltalehti
+||iltalehti.fi
+||il.fi
+
+! Youtube
+||youtube.com
+||www.youtube.com
+||m.youtube.com
+||youtu.be
+
+! Block YouTube Shorts
+||www.youtube.com##ytd-rich-grid-media:has(a[href^="/shorts/"])
+||www.youtube.com##ytd-reel-shelf-renderer
+||www.youtube.com##ytd-video-renderer:has(a[href^="/shorts/"])
+
+! Hide Shorts tab
+||www.youtube.com##tp-yt-paper-tab[role="tab"]:has-text(Shorts)
