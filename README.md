@@ -50,6 +50,16 @@ echo $PATH
 
 ### [`~/.ssh/config`](https://linuxize.com/post/using-the-ssh-config-file/)
 
+## GNU Core Utilities
+
+`brew install coreutils` #macos
+
+### `shred -uvz ~/Downloads/export.xml`
+
+-u -> remove file after overwriting  
+-v -> verbose output  
+-z -> add a final pass of zeros
+
 ## Windows Terminal
 
 ```terminal
