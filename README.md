@@ -235,6 +235,20 @@ to see and edit .svg XML source in browser `view-source:file:///{path}sf_mark_pr
 
 ## [SIEM](https://github.com/MISP/MISP-Taxii-Server) for homelab
 
+## LAN networking
+
+Local device configuration or router settings (e.g. multicast DNS, local DNS Record) will determine if LAN devices are able to network together.
+
+### What is the difference between `hostname.local` || `hostname.localdomain`?
+
+E.g. `raspberrypi.local` is controlled by the Raspberry Pi client itself through mDNS (multicast DNS) with built-in `avahi-daemon`.
+
+Avahi is GNU implementation for [zeroconf networking](https://en.wikipedia.org/wiki/Zero-configuration_networking) (multicast DNS, DNS Service Discovery). Apple has implemented `mDNSResponder` as Bonjour. Apple uses less open **Apache License** compared to **LGPL (GNU Lesser General Public License)**.
+
+> Avahi implements the Apple Zeroconf specification, mDNS, DNS-SD and RFC 3927/IPv4LL. Other implementations include Apple's Bonjour framework (the mDNSResponder component of which is licensed under the Apache License).
+>
+> Avahi provides a set of language bindings (Python, Mono, etc.) and ships with most Linux and BSD distributions. Because of its modularized architecture, major desktop components like GNOME Virtual file system and KDE input/output architecture already integrate Avahi.
+
 ## Pandoc markdown > pdf
 
 ```bash
