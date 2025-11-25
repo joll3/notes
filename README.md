@@ -1,21 +1,5 @@
 # Handcrafted guides for doing infosec and things
 
-## #usecase rclone backup to Hetzner storagebox
-
-REQUIREMENTS: MacOS > Terminal > [zsh](#zsh--command-line-interpreter-cli) > ssh + r
-
-## rclone vs rsync
-
-| rsync                                         | rclone                                                     |
-| --------------------------------------------- | ---------------------------------------------------------- |
-| built-in MacOS Terminal                       | `brew install rclone`                                      |
-| written in C with GPL-3.0-or-later license    | inspired by rsync written in Go                            |
-| source OR destination must be local           | supports 70+ cloud providers (Google Drive, Dropbox, etc.) |
-| does delta encoding to minimize network usage | does not change files                                      |
-| single threaded application                   | supports multiple threads                                  |
-| sync local folders                            | can mount local, virtual or cloud filesystems              |
-| SSH                                           | serves mounts through SFTP, HTTP, WebDAV, FTP and DLNA     |
-
 ## zsh < command line interpreter CLI
 
 - zsh = default **Z Shell** for Unix-like operating systems (e.g. macOS)
@@ -129,7 +113,9 @@ Download `Set-Profile.ps1` and pipe to `Set-Content` cmdlet to override profile
 
 ## Git(hub)
 
-Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git** as part of their offering.
+Tldr. _Gitlab_ and _Github_ are competitors, with open source code manager **Git** as part of their offering. Interview with **Git** creator Linus Torvalds, who used [BitKeeper](https://www.bitkeeper.org) before creating the first "useful for him" build in 10 days. BitKeeper had open source license disagreements and controversies which lead Linus to create git.
+
+[Two decades of Git: A conversation with creator Linus Torvalds](https://www.youtube.com/watch?v=sCr_gb8rdEI)
 
 ### Github guides
 
