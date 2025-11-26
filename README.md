@@ -292,3 +292,7 @@ Blocking Google QUIC traffic with firewall e.g. Little Snitch is almost impossib
 
 [1]: https://www.markdownguide.org/basic-syntax#reference-style-links "a title in double quotation marks"
 [2]: https://www.merriam-webster.com/grammar/ie-vs-eg-abbreviation-meaning-usage-difference
+
+## Sharepoint admin
+
+test
