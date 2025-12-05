@@ -249,6 +249,12 @@ Avahi is GNU implementation for [zeroconf networking](https://en.wikipedia.org/w
 >
 > Avahi provides a set of language bindings (Python, Mono, etc.) and ships with most Linux and BSD distributions. Because of its modularized architecture, major desktop components like GNOME Virtual file system and KDE input/output architecture already integrate Avahi.
 
+## DNS
+
+Everything that can affect DNS:
+
+Operating System Settings -> network adapter, SSID, wifi -> iCloud Private Relay -> VPN -> Browser
+
 ## Pandoc markdown > pdf
 
 ```bash
